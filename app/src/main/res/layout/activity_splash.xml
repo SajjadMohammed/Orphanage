@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        tools:context=".ui.SplashActivity">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="TODO"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_welcome"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/splashImage"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/monadi"
+            android:text="دار الايتام"
+            android:textColor="#FA256E"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/appDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appTitle"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/droid_kufi"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:padding="8dp"
+            android:text="شريحة الايتام من الشرائح المجتمعية المهمة التي اعتنت بها سائر الامم الحضارية.\n ساهم بمساعدتهم من خلال هذا التطبيق."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/droid_kufi"
+            android:text="Code for Iraq"
+            android:textColor="#6063b8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</layout>

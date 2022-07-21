@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settingsItem"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="المزيد"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/signUpItem"
+        android:icon="@drawable/ic_user_add_wf"
+        android:title="@string/signup_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/signInItem"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="@string/login_title"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/logOutItem"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/log_out_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/dashboardItem"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="@string/dashboard"
+        app:showAsAction="always" />
+
+</menu>

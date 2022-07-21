@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:layoutDirection="rtl"
+            android:paddingBottom="4dp"
+            android:textSize="16sp"
+            app:tabIndicator="@drawable/tabs_indicator"
+            app:tabIndicatorColor="#FA256E"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/ripple_color"
+            app:tabTextAppearance="@style/TabItemTextAppearance" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomNavigation"
+            android:layout_below="@id/tabsLayout" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tab_background"
+            android:layoutDirection="ltr"
+            app:backgroundTint="@color/white"
+            app:itemBackground="@drawable/bottom_indicator"
+            app:itemRippleColor="#6063b8"
+            app:itemTextColor="@color/item_text_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/register_navigation" />
+    </RelativeLayout>
+
+</layout>

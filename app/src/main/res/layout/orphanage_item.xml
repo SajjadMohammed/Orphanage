@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="orphanage"
+            type="org.codeforiraq.orphanage.pager.Orphanage" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/card_color"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_border">
+
+            <TextView
+                android:id="@+id/orphanageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/pictureCard"
+                android:fontFamily="@font/droid_kufi"
+                android:gravity="right"
+                android:padding="6dp"
+                android:text="@{orphanage.orphanageName}"
+                android:textColor="#FA256E"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/myView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/orphanageName"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:background="#E0F2F1" />
+
+            <TextView
+                android:id="@+id/orphanageAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/myView"
+                android:layout_toLeftOf="@id/pictureCard"
+                android:fontFamily="@font/questv_regular"
+                android:gravity="right"
+                android:padding="6dp"
+                android:text="@{orphanage.address}"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orphanageAddress"
+                android:layout_toLeftOf="@id/pictureCard"
+                android:fontFamily="@font/questv_regular"
+                android:gravity="right"
+                android:padding="6dp"
+                android:text="@{orphanage.description}"
+                android:textSize="14sp" />
+
+
+            <FrameLayout
+                android:id="@+id/pictureCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/image_border"
+                android:padding="3dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="27dp">
+
+                    <ImageView
+                        android:id="@+id/orphanagePicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/person_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/male"
+                        app:imageUrl="@{orphanage.photoUri}" />
+
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

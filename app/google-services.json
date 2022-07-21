@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179434003738",
+    "project_id": "orphanage-cc4e0",
+    "storage_bucket": "orphanage-cc4e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179434003738:android:15440feef920edad2ae0a3",
+        "android_client_info": {
+          "package_name": "org.codeforiraq.orphanage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179434003738-922vepjkgnn4eat6iaial6ko3a5mkr0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy-qXYt62XhtQ4w8PyEj-fvpJgdkuUZps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179434003738-922vepjkgnn4eat6iaial6ko3a5mkr0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

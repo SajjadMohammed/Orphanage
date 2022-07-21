@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#6063b8</color>
+    <color name="primary_dark_color">#6063b8</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#F7F8FB</color>
+    <color name="tab_background">#F7F8FB</color>
+    <color name="item_title_color">#FAFAFA</color>
+    <color name="card_color">#FFFFFF</color>
+    <color name="border_color">#c5c5c5</color>
+    <color name="tab_indicator">#FF0196A6</color>
+    <color name="ripple_color">#1DE9B6</color>
+    <color name="item_text_color">#231F20</color>
+
+    <color name="teal_200">#6063b8</color>
+    <color name="teal_700">#fff</color>
+    <color name="purple_500">#6063b8</color>
+</resources>

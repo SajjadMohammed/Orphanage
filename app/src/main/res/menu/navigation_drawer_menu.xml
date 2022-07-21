@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/aboutAppItem"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="عن التطبيق"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/aboutCodeForIraq"
+            android:icon="@drawable/ic_organization_wf"
+            android:title="حول المبادرة"
+            app:showAsAction="ifRoom" />
+
+
+        <item
+            android:id="@+id/aboutTeam"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="فريق العمل"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/codeForIraqApps"
+            android:icon="@drawable/ic_baseline_apps_24"
+            android:title="تطبيقات المبادرة"
+            app:showAsAction="ifRoom" />
+    </group>
+
+</menu>
